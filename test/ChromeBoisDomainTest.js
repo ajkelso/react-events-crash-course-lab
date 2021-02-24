@@ -32,6 +32,7 @@ describe('<ChromeBoisDomain />', () => {
     }
     instance.handleMouseMove(event)
     const [x, y] = drawChromeBoiAtCoords.getCall(0).args
+    console.log(drawChromeBoiAtCoords.getCall.args)
     expect(x).to.equal(33)
     expect(y).to.equal(44)
   })
